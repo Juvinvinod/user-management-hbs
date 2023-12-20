@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Home</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="/logout">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data:image/jpeg;base64,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"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone 12</h5>
+                            <p class="card-text">The iPhone 12 display has rounded corners that follow a beautiful
+                                curved design, and these corners are within a standard rectangle.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.shopify.com/s/files/1/0615/1631/6729/products/Nokia-C21-Plus-Display.jpg?v=1664092758&width=360"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nokia C21</h5>
+                            <p class="card-text">Nokia C21 has been launched officially. The smartphone comes
+                                packed with a IPS LCD Display and offers high screen
+                                resolution.</p>
+                            <a href="" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.shopify.com/s/files/1/0615/1631/6729/products/Realme-C25Y.jpg?v=1662186575&width=360"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Realme C25Y</h5>
+                            <p class="card-text">Realme C25Y has been launched officially. The smartphone comes
+                                packed with a IPS LCD Display and offers high screen
+                                resolution.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://cdn.shopify.com/s/files/1/0615/1631/6729/products/Nokia-C30-Display.jpg?v=1664093529&width=360"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">VIVO Y15C</h5>
+                            <p class="card-text">VIVO Y15C has been launched officially. The smartphone comes
+                                packed with a IPS LCD Display and offers high screen
+                                resolution.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
